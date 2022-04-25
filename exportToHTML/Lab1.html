@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Lab1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #8c8c8c; font-style: italic;}
+.s1 { color: #080808;}
+.s2 { color: #008080; font-weight: bold;}
+.s3 { color: #0037a6;}
+.s4 { color: #1750eb;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Lab1</font>
+</center></td></tr></table>
+<pre><span class="s0">#Kiara Lindsey</span>
+<span class="s0">#08/30/20</span>
+<span class="s0">#Paycheck Calculator - A Program that calculates someone's weekly gross pay</span>
+<span class="s0">#display title</span>
+<span class="s1">print (</span><span class="s2">&quot;Pay Check Calculator&quot;</span><span class="s1">)</span>
+<span class="s1">print (</span><span class="s2">'</span><span class="s3">\n</span><span class="s2">'</span><span class="s1">)</span>
+<span class="s0">#allow user input for hours worked and hourly rate</span>
+<span class="s1">hours_worked = int(input(</span><span class="s2">&quot;Hours Worked:</span><span class="s3">\t \t</span><span class="s2">&quot;</span><span class="s1">))</span>
+<span class="s1">hourly_rate = float(input(</span><span class="s2">&quot;Hourly Pay Rate:</span><span class="s3">\t</span><span class="s2">&quot;</span><span class="s1">))</span>
+<span class="s1">print (</span><span class="s2">&quot;</span><span class="s3">\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+<span class="s0">#calculate gross pay</span>
+<span class="s1">gross_pay = float(hours_worked * hourly_rate)</span>
+<span class="s1">print (</span><span class="s2">&quot;Gross Pay:</span><span class="s3">\t\t\t</span><span class="s2">&quot;</span><span class="s1">,gross_pay)</span><span class="s0">#this is print the number w/ proper verbage</span>
+<span class="s1">x = (float(input(</span><span class="s2">&quot;Tax Rate: </span><span class="s3">\t\t\t</span><span class="s2">&quot;</span><span class="s1">)))</span>
+<span class="s1">tax_rate = x  </span><span class="s0">#+'{%.2f}'.format to format into 18%? I kept getting an error</span>
+<span class="s1">tax_amount = (float(gross_pay * (tax_rate / </span><span class="s4">100 </span><span class="s1">))) </span><span class="s0">#{0.2f}.format(tax_amount)?</span>
+<span class="s1">print(</span><span class="s2">&quot;Tax Amount:</span><span class="s3">\t\t </span><span class="s2">&quot;</span><span class="s1">,tax_amount)</span>
+<span class="s1">take_home_pay = float(int( gross_pay - tax_amount))</span>
+<span class="s1">print (</span><span class="s2">&quot;Take Home Pay: </span><span class="s3">\t\t</span><span class="s2">&quot;</span><span class="s1">, take_home_pay)</span>
+</pre>
+</body>
+</html>

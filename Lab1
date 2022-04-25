@@ -1,0 +1,19 @@
+#Kiara Lindsey
+#08/30/20
+#Paycheck Calculator - A Program that calculates someone's weekly gross pay
+#display title
+print ("Pay Check Calculator")
+print ('\n')
+#allow user input for hours worked and hourly rate
+hours_worked = int(input("Hours Worked:\t \t"))
+hourly_rate = float(input("Hourly Pay Rate:\t"))
+print ("\n")
+#calculate gross pay
+gross_pay = float(hours_worked * hourly_rate)
+print ("Gross Pay:\t\t\t",gross_pay)#this is print the number w/ proper verbage
+x = (float(input("Tax Rate: \t\t\t")))
+tax_rate = x  #+'{%.2f}'.format to format into 18%? I kept getting an error
+tax_amount = (float(gross_pay * (tax_rate / 100 ))) #{0.2f}.format(tax_amount)?
+print("Tax Amount:\t\t ",tax_amount)
+take_home_pay = float(int( gross_pay - tax_amount))
+print ("Take Home Pay: \t\t", take_home_pay)

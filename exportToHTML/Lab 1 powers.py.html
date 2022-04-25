@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Lab 1 powers.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #8c8c8c; font-style: italic;}
+.s1 { color: #080808;}
+.s2 { color: #008080; font-weight: bold;}
+.s3 { color: #0037a6;}
+.s4 { color: #0033b3;}
+.s5 { color: #1750eb;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Lab 1 powers.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#Kiara Lindsey</span>
+<span class="s0">#08/30/20</span>
+<span class="s0">#Table of Powers - Calculates a number squared or cubed</span>
+<span class="s0">#display title</span>
+<span class="s1">print (</span><span class="s2">&quot;Table of Powers&quot;</span><span class="s1">)</span>
+<span class="s1">print (</span><span class="s2">'</span><span class="s3">\n</span><span class="s2">'</span><span class="s1">)</span>
+<span class="s0">#Allow input</span>
+<span class="s1">start_x = int(input(</span><span class="s2">&quot;Start Number: &quot;</span><span class="s1">))</span>
+<span class="s1">stop_x = int(input(</span><span class="s2">&quot;Stop Number:  &quot;</span><span class="s1">))</span>
+<span class="s1">x = start_x</span>
+<span class="s1">print(</span><span class="s2">'</span><span class="s3">\n</span><span class="s2">'</span><span class="s1">)</span>
+<span class="s0"># Error message for start integer that's larger than the stop integer</span>
+<span class="s4">while </span><span class="s1">start_x &gt; stop_x:</span>
+    <span class="s1">print (</span><span class="s2">&quot;Start integer must be less than stop integer.&quot;</span><span class="s1">)</span>
+    <span class="s1">start_x = int(input(</span><span class="s2">&quot;Enter a lower integer: &quot;</span><span class="s1">)) </span><span class="s0">#gives user a chance to enter lower integer</span>
+<span class="s0">#formatting  for columns use \t for spacing</span>
+<span class="s1">print(</span><span class="s2">&quot;Number </span><span class="s3">\t\t\t</span><span class="s2">&quot;</span><span class="s1">,</span><span class="s2">&quot;Squared</span><span class="s3">\t\t\t</span><span class="s2">&quot;</span><span class="s1">, </span><span class="s2">&quot;Cubed&quot;</span><span class="s1">) </span><span class="s0">#headings</span>
+<span class="s1">print(</span><span class="s2">&quot;====== </span><span class="s3">\t\t\t</span><span class="s2">&quot;</span><span class="s1">,</span><span class="s2">&quot;====== </span><span class="s3">\t\t\t</span><span class="s2">&quot;</span><span class="s1">, </span><span class="s2">&quot;======&quot;</span><span class="s1">)</span>
+ <span class="s0">#for loop(s) for calculating squared and cubed values</span>
+<span class="s4">for </span><span class="s1">x </span><span class="s4">in  </span><span class="s1">range (int(start_x)):</span>
+  <span class="s1">squared= print(x ** </span><span class="s5">2</span><span class="s1">)</span>
+<span class="s4">for </span><span class="s1">x </span><span class="s4">in </span><span class="s1">range (int(start_x)):</span>
+ <span class="s1">cubed=print(x ** </span><span class="s5">3</span><span class="s1">)</span>
+<span class="s4">for </span><span class="s1">x </span><span class="s4">in  </span><span class="s1">range (int(stop_x)):   </span><span class="s0">#formatting the values kept brionging up errors</span>
+  <span class="s1">squared= print(x ** </span><span class="s5">2</span><span class="s1">)</span>
+<span class="s4">for </span><span class="s1">x </span><span class="s4">in </span><span class="s1">range (int(stop_x)):</span>
+ <span class="s1">cubed=print(x**</span><span class="s5">3</span><span class="s1">)</span>
+</pre>
+</body>
+</html>

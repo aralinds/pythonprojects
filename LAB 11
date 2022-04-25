@@ -1,0 +1,63 @@
+#Purpose: Lab 11
+#   Program Name:RECTANGLE CALCULATOR
+#   Exercise:
+#  Use your program from Lab 10 and expand it to a program that uses inheritance to perform calculations on either a rectangle or a square.
+#
+#   Author: Kiara Lindsey
+#   Date: November  2020
+class Rectangle:
+    def __init__(self, height, width):
+        self.height = height
+        self.width = width
+
+    def getPerimeter(self):
+        perimeter = self.height * 2 + self.width * 2
+        return perimeter
+
+    def getArea(self):
+        area = self.height * self.width
+        return area
+
+    def getStr(self):
+        s = ""
+        w = "* " * self.width + "\n"
+        s += w
+        for i in range(self.height - 2):
+            s += "* "
+            s += "  " * (self.width - 2)
+            s += "* \n"
+        s += w
+        return s
+
+class Square(Rectangle):
+    def __init__(self,height, width):
+        super().__init__(height,width)
+    def area(self):
+        a = pow(self.height * self.width * self.length)
+        print("Area:" ,a)
+        return a
+def main():
+    print("Rectangle Calculator")
+    print()
+    print(input("Rectangle or Square? (r/s): ").lower())
+
+    while True:
+        height = int(input("Height:    "))
+        width = int(input("Width:     "))
+
+        rectangle = Rectangle(height, width)
+        print("Perimeter:", rectangle.getPerimeter())
+        print("Area:     ", rectangle.getArea())
+        print(rectangle.getStr())
+
+
+        again = input("Continue? (y/n): ").lower()
+        print()
+        if again != "y":
+            break
+
+    print("Bye!")
+
+
+if __name__ == "__main__":
+    main()
